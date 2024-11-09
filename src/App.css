@@ -1,38 +1,138 @@
-.App {
-  text-align: center;
+:root {
+  margin: 0px;
+  padding: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  font-family: Arial, Helvetica, sans-serif;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-color: rgba(243, 243, 243, 0.426);
 }
 
-.App-link {
-  color: #61dafb;
+.gradient-text {
+  background: linear-gradient(90deg, #ff50d9, #1e90ff);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+  margin-top: 30px;
+}
+.balance h4 {
+  font-weight: 500;
+}
+#balance {
+  margin-top: -20px;
+}
+
+.inc-exp-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10vw;
+  background-color: white;
+  border: 0.5px solid black;
+  border-radius: 10px;
+  box-shadow: 7px 7px rgba(0, 0, 0, 0.163);
+  width: 60vw;
+  font-size: 1.3rem;
+  padding: 20px;
+}
+
+.money {
+  font-size: 1.6rem;
+}
+
+.plus {
+  background: linear-gradient(90deg, #93d341, #26ac41);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 600;
+}
+.minus {
+  background: linear-gradient(90deg, #ec9752, #c41111);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 600;
+}
+
+.transaction-header {
+  font-weight: 1000;
+}
+
+.transaction-list {
+  border-top: 1px solid black;
+  padding: 10px;
+}
+.transaction-list li {
+  text-align: center;
+  list-style: none;
+  border: 0.5px solid black;
+  padding: 10px;
+  margin: 5px;
+  background-color: white;
+  border-radius: 20px;
+  font-size: 1.2rem;
+}
+.transaction-list li button {
+  padding: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  float: right;
+  background-color: red;
+  border: 1px solid gray;
+  border-radius: 20px;
+  font-size: 1.1rem;
+}
+
+.transaction-list li button:hover {
+  cursor: pointer;
+  transition: linear 0.4s;
+  background-color: #f63b3bef;
+}
+form {
+  border-top: 1px solid black;
+  padding: 10px;
+  display: column;
+}
+
+.form-control {
+  margin: 10px;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid rgb(194, 194, 194);
+}
+
+.form-control input {
+  float: right;
+  width: 60%;
+  height: 25px;
+  border-radius: 10px;
+  border: 0.5px solid white;
+  background-color: whitesmoke;
+  padding: 3px;
+  padding-left: 10px;
+  margin: -5px;
+}
+
+.btn {
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(83, 176, 247);
+  border: 1px solid black;
+  background: linear-gradient(
+    90deg,
+    rgb(148, 200, 239) 50%,
+    rgb(80, 172, 242) 50%
+  );
+  background-size: 200% 100%;
+  background-position: left;
+  transition: background-position 0.4s ease-out;
+}
+
+.btn:hover {
+  background-position: right;
+  cursor: pointer;
 }
