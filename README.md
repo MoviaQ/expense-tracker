@@ -20,4 +20,5 @@ A simple application for tracking personal expenses, allowing users to quickly a
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/YourRepository/expense-tracker.git
+   git clone https://github.com/MoviaQ/expense-tracker.git
+   ```
